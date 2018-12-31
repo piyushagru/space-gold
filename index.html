@@ -22,6 +22,7 @@
         var bullet;
         var cursors;
         var score_text;
+        var winText;
         //var woman;
 
         function preload() {
@@ -80,6 +81,10 @@
             //woman.animations.play('walk',14,true)
             //game.physics.arcade.enable(woman)
             //woman.body.velocity.x=50;
+
+            winText=game.add.text(window.innerWidth/6,window.innerHeight/3,'Game Over',{font: '150px MrRobot', fill:'#ff0000'});
+            winText.visible=false;
+
              }
 
         function update() {
@@ -98,6 +103,8 @@
             degree = Math.atan((game.input.y - player.y) / (game.input.x - player.x)) * 180 / Math.PI + 90;
             player.angle = degree;
         
+            if(score<0)winText.visible=true;
+            else
             score_text.setText("SCORE: "+score)
         }
 
