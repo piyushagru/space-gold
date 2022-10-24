@@ -1,5 +1,5 @@
 # space-gold
-##web-game using phaser
+## web-game using phaser
 
 Description:
 We have found a coin-belt in space. We can collect these coins by hovering over them.
