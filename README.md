@@ -1,4 +1,4 @@
-# space-gold
+# Space-Gold
 ## web-game using phaser
 
 Description:
